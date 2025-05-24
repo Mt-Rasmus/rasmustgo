@@ -5,26 +5,44 @@ import VideoEntry from './VideoListEntry.vue';
 const videos = [
   {
     id: 1,
-    url: 'https://youtu.be/xJMvZjDDcuo?si=uJBjRBRN5uysVsil',
+    url: 'https://www.youtube.com/watch?v=xJMvZjDDcuo',
     thumbnail: 'src/assets/thumbnails/SteveDogsThumbnail9.png',
     gifPreview: 'https://media.giphy.com/media/abc123/giphy.gif',
   },
   {
     id: 2,
     url: 'https://youtu.be/xJMvZjDDcuo?si=uJBjRBRN5uysVsil',
-    thumbnail: 'src/assets/thumbnails/SteveDogsThumbnail9.png',
+    thumbnail: 'src/assets/thumbnails/Fancy.png',
     gifPreview: 'https://media.giphy.com/media/abc123/giphy.gif',
   },
   {
     id: 3,
-    url: 'https://youtu.be/xJMvZjDDcuo?si=uJBjRBRN5uysVsil',
-    thumbnail: 'src/assets/thumbnails/SteveDogsThumbnail9.png',
+    url: 'https://www.youtube.com/watch?v=FxZQG52SuWo',
+    thumbnail: 'src/assets/thumbnails/Perennial.png',
     gifPreview: 'https://media.giphy.com/media/abc123/giphy.gif',
   },
   {
     id: 4,
-    url: 'https://youtu.be/xJMvZjDDcuo?si=uJBjRBRN5uysVsil',
-    thumbnail: 'src/assets/thumbnails/SteveDogsThumbnail9.png',
+    url: 'https://www.youtube.com/watch?v=RSldWKGYfEs',
+    thumbnail: 'src/assets/thumbnails/TheInterview.png',
+    gifPreview: 'https://media.giphy.com/media/abc123/giphy.gif',
+  },
+  {
+    id: 5,
+    url: 'https://www.youtube.com/watch?v=OnmXfh_fqkg',
+    thumbnail: 'src/assets/thumbnails/gains.png',
+    gifPreview: 'https://media.giphy.com/media/abc123/giphy.gif',
+  },
+  {
+    id: 6,
+    url: 'https://www.youtube.com/watch?v=-WWquHtph5A',
+    thumbnail: 'src/assets/thumbnails/Smeagol-Arnold.png',
+    gifPreview: 'https://media.giphy.com/media/abc123/giphy.gif',
+  },
+  {
+    id: 7,
+    url: 'https://www.youtube.com/watch?v=aRIY36bBk78',
+    thumbnail: 'src/assets/thumbnails/TheGhost.png',
     gifPreview: 'https://media.giphy.com/media/abc123/giphy.gif',
   },
 ]
@@ -36,19 +54,20 @@ const videos = [
   <div class="flex justify-center w-full">
     <div class="wrapper">
       <div v-for="video in videos" :key="video.id">
-        <VideoEntry :video /> 
-      </div> 
+        <VideoEntry :video />
+      </div>
     </div>
   </div>
-
-
 </template>
 
 <style scoped>
 
 .wrapper {
   display: grid;
-  grid-template-columns: minmax(33%, auto) minmax(33%, auto)
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 72vw;
+  padding: 0 16px;
 }
-
 </style>

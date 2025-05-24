@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="w-[320px] h-[180px] bg-amber-600 border cursor-pointer relative overflow-hidden">
+  <div class="relative w-full aspect-video overflow-hidden cursor-pointer">
     <img
       :src="video.thumbnail"
       class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 hover:opacity-0"
