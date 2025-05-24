@@ -1,10 +1,13 @@
 <script setup lang="ts">
 
 import { useRoute } from 'vue-router';
+import videos from '../data/videos';
+import { type Video } from '../types/video'
 
 const route = useRoute();
 
 const videoId = route.params.id;
+const video = <Video>videos.find(({ id }) => id === Number(videoId));
 
 </script>
 
@@ -17,7 +20,7 @@ const videoId = route.params.id;
         <iframe
           width="560"
           height="315"
-          :src="'https://www.youtube.com/embed/aRIY36bBk78'"
+          :src="video.embedUrl"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
