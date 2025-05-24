@@ -5,7 +5,7 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
     <div class="flex justify-center">
-      <nav class="flex justify-center mt-5">
+      <nav class="flex justify-center">
         <div class="pr-4">
           <RouterLink to="/" class="!text-black">Home</RouterLink>
         </div>
