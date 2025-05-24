@@ -1,9 +1,9 @@
 <script setup lang="ts">
+
+import { type Video } from '../types/video'
+
 defineProps<{
-  video: {
-    thumbnail: string;
-    gifPreview: string;
-  };
+  video: Video;
 }>();
 </script>
 
