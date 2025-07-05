@@ -15,12 +15,11 @@
           I'm a cartoonist based in Amsterdam, originally from Sweden.
         </div>
         <div class="mb-4">
-          I love creating entertaining stories through animation.
           All of my cartoons are made entirely by me: writing, voices, artwork, animation, sound, and even most of the music.
           I've been crafting cartoons like this for over 10 years.
         </div>
         <div class="mb-4">
-          Alongside animation, I work professionally as a software developer, though my main focus is on animation and storytelling.
+          Alongside animation, I work professionally as a software developer, though my main focus and love is for animation and storytelling.
         </div>
         <div class="mb-4">
           I have a Bacherlor's and a Master's degree in Media Technology and Engineering from Linköping University.
