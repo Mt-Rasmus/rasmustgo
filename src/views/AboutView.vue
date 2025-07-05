@@ -1,6 +1,41 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <div class="mx-9 mt-[20px] flex w-full" style="font-family: 'Fredoka', sans-serif;">
+      <div class="w-[40%]">
+        <img src="/src/assets/9.jpeg">
+      </div>
+      <div class="w-[50%] ml-6">
+        <div class="mb-6 flex">
+          I'm 
+          <div class="font-bold ml-1">
+            Rasmus Ståhl.
+          </div>
+        </div>
+        <div class="mb-4">
+          I'm a cartoonist based in Amsterdam, originally from Sweden.
+        </div>
+        <div class="mb-4">
+          I love creating entertaining stories through animation.
+          All of my cartoons are made entirely by me: writing, voices, artwork, animation, sound, and even most of the music.
+          I've been crafting cartoons like this for over 10 years.
+        </div>
+        <div class="mb-4">
+          Alongside animation, I work professionally as a software developer, though my main focus is on animation and storytelling.
+        </div>
+        <div class="mb-4">
+          I have a Bacherlor's and a Master's degree in Media Technology and Engineering from Linköping University.
+        </div>
+        <div class="mb-4">
+          <div class="mb-4">Feel free to reach out if you'd like to collaborate — or just say hi: </div>
+          <a href="mailto:rasmus.stahl.47@gmail.com">
+            <div style="color: #409EFF;">rasmus.stahl.47@gmail.com</div>
+          </a>
+        </div>
+
+        <div>Cheers!</div>
+      </div>
+
+    </div>
   </div>
 </template>
 
@@ -8,8 +43,6 @@
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
   }
 }
 </style>
