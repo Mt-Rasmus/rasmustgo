@@ -13,12 +13,12 @@ const video = <Video>videos.find(({ id }) => id === Number(videoId));
 </script>
 
 <template>
-  <div class="flex justify-center w-full mt-7">
+  <div class="flex justify-center w-full mt-7" style="font-family: 'Fredoka'">
     <div class="wrapper">
       <div class="youtube-video">
         <div class="video-container">
           <iframe
-            :src="video.embedUrl"
+            :src="`${video.embedUrl}?end=51`"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -28,7 +28,7 @@ const video = <Video>videos.find(({ id }) => id === Number(videoId));
       </div>
       <div class="mt-6 font-bold text-xl mb-4">{{ video.title }}</div>
       <div class="mb-2">{{ video?.description }}</div>
-      <div class="mb-2">Role: {{ video?.description }}</div>
+      <div class="mb-2">Role: {{ video?.role }}</div>
       <div class="mb-5">{{ `(${video?.year})` }}</div>
     </div>
   </div>

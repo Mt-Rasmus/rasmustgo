@@ -7,13 +7,13 @@ import FooterComponent from '@/components/FooterComponent.vue';
 <template>
   <div class="about">
     <div class="mx-9 mt-[20px] flex w-full" style="font-family: 'Fredoka', sans-serif;">
-      <div class="w-[40%]">
-        <img src="/src/assets/9.jpeg">
+      <div class="w-[40%] ">
+        <img src="/src/assets/9.jpeg" class="rounded-sm">
       </div>
       <div class="w-[50%] ml-6">
-        <div class="mb-6 flex">
+        <div class="mb-4 flex">
           I'm 
-          <div class="font-bold ml-1">
+          <div class="font-bold ml-1" style="color: #409EFF;">
             Rasmus Ståhl.
           </div>
         </div>
@@ -33,7 +33,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
         <div class="mb-4">
           <div class="mb-4">Feel free to reach out if you'd like to collaborate — or just say hi: </div>
           <a href="mailto:rasmus.stahl.47@gmail.com">
-            <div style="color: #409EFF;">rasmus.stahl.47@gmail.com</div>
+            <div class="font-bold" style="color: #409EFF;">rasmus.stahl.47@gmail.com</div>
           </a>
         </div>
         <div>Cheers!</div>
