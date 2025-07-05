@@ -13,7 +13,6 @@ import videos from '../data/videos';
         <RouterLink :to="String(video.id)">
           <VideoEntry :video />
         </RouterLink>
-
       </div>
     </div>
   </div>

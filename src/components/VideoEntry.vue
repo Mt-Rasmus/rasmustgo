@@ -3,6 +3,7 @@
 import { useRoute } from 'vue-router';
 import videos from '../data/videos';
 import { type Video } from '../types/video'
+import FooterComponent from '@/components/FooterComponent.vue';
 
 const route = useRoute();
 
@@ -25,11 +26,13 @@ const video = <Video>videos.find(({ id }) => id === Number(videoId));
           />
         </div>
       </div>
-      <div class="mt-6">{{ video.title }}</div>
-      <div>A video about...</div>
-      <div>Credits:</div>
+      <div class="mt-6 font-bold text-xl mb-4">{{ video.title }}</div>
+      <div class="mb-2">{{ video?.description }}</div>
+      <div class="mb-2">Role: {{ video?.description }}</div>
+      <div class="mb-5">{{ `(${video?.year})` }}</div>
     </div>
   </div>
+  <FooterComponent class="mt-[40px] mb-[20px]" />
 </template>
 
 <style scoped>

@@ -6,7 +6,6 @@ const currentPage = ref('')
 const router = useRouter()
 
 const handleClick = (tab: { paneName: unknown; }) => {
-  console.log(tab?.paneName )
   router.push(`/${tab.paneName}`);
 }
 
@@ -20,7 +19,7 @@ const goToInstagram = () => {
   <header>
     <div class="flex flex-row justify-center items-center mt-5 px-9 w-full h-[75px]">
       <div class="flex justify-start w-full">
-        <img src="/src/assets/header/logo2-1.png" class="w-[150px]"/>
+        <img src="/src/assets/header/logo2-1.png" class="w-[150px] cursor-pointer" @click="handleClick({ paneName: '' })"/>
       </div>
       <div class="flex">
         <el-tabs v-model="currentPage" class="demo-tabs custom-tabs" @tab-click="handleClick">

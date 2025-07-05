@@ -13,19 +13,19 @@ const icons = [
     name: 'youtube',
     icon: './src/assets/youtube-brands-solid.svg',
     hoverIcon: './src/assets/youtube-brands-solid-blue.svg',
-    action: () => window.open('https://www.instagram.com/rasmustgo/', '_blank')
+    action: () => window.open('https://www.youtube.com/@rasmustgo', '_blank')
   },
   {
     name: 'tiktok',
     icon: './src/assets/tiktok-brands-solid.svg',
     hoverIcon: './src/assets/tiktok-brands-solid-blue.svg',
-    action: () => window.open('https://www.instagram.com/rasmustgo/', '_blank')
+    action: () => window.open('https://www.tiktok.com/@rasmustgo', '_blank')
   },
   {
     name: 'gmail',
     icon: './src/assets/envelope-solid.svg',
     hoverIcon: './src/assets/envelope-solid-blue.svg',
-    action: () => window.open('https://www.instagram.com/rasmustgo/', '_blank')
+    action: () => window.location.href = 'mailto:rasmus.stahl.47@gmail.com',
   },
 ]
 
@@ -33,7 +33,7 @@ const icons = [
 
 <template>
   <div class="flex justify-center">
-    <div v-for="(icon, index) in icons" :key="index">
+    <div v-for="(icon, index) in icons" :key="index" class="mb-4">
       <SocialMediaIcon :icon/>
     </div>
   </div>

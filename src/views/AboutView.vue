@@ -1,3 +1,9 @@
+<script setup lang="ts">
+
+import FooterComponent from '@/components/FooterComponent.vue';
+
+</script>
+
 <template>
   <div class="about">
     <div class="mx-9 mt-[20px] flex w-full" style="font-family: 'Fredoka', sans-serif;">
@@ -30,12 +36,11 @@
             <div style="color: #409EFF;">rasmus.stahl.47@gmail.com</div>
           </a>
         </div>
-
         <div>Cheers!</div>
       </div>
-
     </div>
   </div>
+  <FooterComponent class="mt-[40px] mb-[20px]" />
 </template>
 
 <style>

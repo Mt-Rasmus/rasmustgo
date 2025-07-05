@@ -1,6 +1,7 @@
 <script setup lang="ts">
 
 import reel from '../data/reel';
+import FooterComponent from '@/components/FooterComponent.vue';
 
 </script>
 
@@ -20,6 +21,7 @@ import reel from '../data/reel';
       </div>
     </div>
   </div>
+  <FooterComponent class="mt-[40px] mb-[20px]" />
 </template>
 
 <style scoped>

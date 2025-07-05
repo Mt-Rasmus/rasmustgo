@@ -9,6 +9,10 @@ const videos: Video[] = [
     embedUrl: 'https://www.youtube.com/embed/xJMvZjDDcuo',
     thumbnail: 'src/assets/thumbnails/SteveDogsThumbnail9.png',
     gifPreview: 'src/assets/gifs/iBone.gif',
+    description: `Parody of Steve Jobs\'s 2007 iPhone keynote with a canine twist. \n 
+    Inspiration came from seeing my friends\'s dog with a little turtleneck sweater.`,
+    role: 'Everything, from script, voices, artwork, animation',
+    year: 2025,
   },
   {
     id: 2,
