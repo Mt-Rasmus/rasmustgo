@@ -7,7 +7,7 @@ import videos from '../data/videos';
 </script>
 
 <template>
-  <div class="flex justify-center w-full mb-[75px]">
+  <div class="flex justify-center w-full">
     <div class="wrapper">
       <div v-for="video in videos" :key="video.id">
         <RouterLink :to="String(video.id)">
