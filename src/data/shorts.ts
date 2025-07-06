@@ -1,0 +1,98 @@
+import { type Video } from '../types/video'
+
+const shorts: Video[] = [
+  {
+    id: 'customer-support-1',
+    title: 'Customer Support 1',
+    url: 'https://www.youtube.com/shorts/2v2eQlT_SBA',
+    embedUrl: 'https://www.youtube.com/embed/2v2eQlT_SBA',
+    thumbnail: 'src/assets/thumbnails/shorts/CustomerSupport-thumbnail.png',
+    gifPreview: 'src/assets/gifs/shorts/CustomerSupport1.gif',
+    description: `The first in a series of parodies of life as a Customer Support agent. \n
+    Inspiration comes from working for a few years at a Telecom company.`,
+    role: 'Everything, from script, voices, artwork, animation and sound editing.',
+    year: 2025,
+  },
+  {
+    id: 'customer-support-2',
+    title: 'Customer Support 2',
+    url: 'https://www.youtube.com/shorts/ECb9w2iBe-A',
+    embedUrl: 'https://www.youtube.com/embed/ECb9w2iBe-A',
+    thumbnail: 'src/assets/thumbnails/shorts/CustomerSupport2-thumbnail.png',
+    gifPreview: 'src/assets/gifs/shorts/CustomerSupport2.gif',
+    description: `Second entry in my small series of parodies of life as a Customer Support agent.`,
+    role: 'Everything, from script, voices, artwork, animation and sound editing.',
+    year: 2025,
+  },
+];
+
+const sweShorts: Video[] = [
+  {
+    id: 'astronauterna',
+    title: 'The Astronauts',
+    url: 'https://youtube.com/shorts/xdckuYPH60M?feature=share',
+    embedUrl: 'https://www.youtube.com/embed/xdckuYPH60M',
+    thumbnail: 'src/assets/thumbnails/shorts/astronauterna.png',
+    gifPreview: 'src/assets/gifs/shorts/swe/astronauterna.gif',
+    description: `Two austronauts investigate an unknown planet.`,
+    role: 'Everything, from script, voices, artwork, animation and sound editing.',
+    year: 2024,
+  },
+  {
+    id: 'boomer',
+    title: 'Boomer',
+    url: 'https://youtube.com/shorts/fUIjuMCx1-c?feature=share',
+    embedUrl: 'https://www.youtube.com/embed/fUIjuMCx1-c',
+    thumbnail: 'src/assets/thumbnails/shorts/boomer.png',
+    gifPreview: 'src/assets/gifs/shorts/swe/boomer.gif',
+    description: `A terrible thing has befallen a young girl. Luckliy, elderly wisdom can make us reevalute our perspective.`,
+    role: 'Everything, from script, voices, artwork, animation and sound editing.',
+    year: 2024,
+  },
+  {
+    id: 'goldminer',
+    title: 'Gold miner',
+    url: 'https://youtube.com/shorts/VrpX-5cov40?feature=share',
+    embedUrl: 'https://www.youtube.com/embed/VrpX-5cov40',
+    thumbnail: 'src/assets/thumbnails/shorts/guldgravare.png',
+    gifPreview: 'src/assets/gifs/shorts/swe/goldminer.gif',
+    description: `Gold mining can be a blessing and a curse.`,
+    role: 'Everything, from script, voices, artwork, animation and sound editing.',
+    year: 2024,
+  },
+  {
+    id: 'rapbattle',
+    title: 'Rap Battle',
+    url: 'https://youtube.com/shorts/5QIc16tpI_s?feature=share',
+    embedUrl: 'https://www.youtube.com/embed/5QIc16tpI_s',
+    thumbnail: 'src/assets/thumbnails/shorts/rapbattle.png',
+    gifPreview: 'src/assets/gifs/shorts/swe/battle.gif',
+    description: `Don\'t judge a book by it\'s cover. Especially in rap.`,
+    role: 'Everything, from script, voices, artwork, animation, sound editing and music.',
+    year: 2024,
+  },
+  {
+    id: 'meditation',
+    title: 'Meditation',
+    url: 'https://youtube.com/shorts/ZFtQ6BNjR4Y?feature=share',
+    embedUrl: 'https://www.youtube.com/embed/ZFtQ6BNjR4Y',
+    thumbnail: 'src/assets/thumbnails/shorts/meditation.png',
+    gifPreview: 'src/assets/gifs/shorts/swe/meditation.gif',
+    description: `Guided meditation is so calming and soothing, isn\'t it?.`,
+    role: 'Everything, from script, voices, artwork, animation and sound editing.',
+    year: 2024,
+  },
+  {
+    id: 'friendlyRequest',
+    title: 'Friendly request',
+    url: 'https://youtube.com/shorts/YyJnljDKZzA?feature=share',
+    embedUrl: 'https://www.youtube.com/embed/YyJnljDKZzA',
+    thumbnail: 'src/assets/thumbnails/shorts/pengar.png',
+    gifPreview: 'src/assets/gifs/shorts/swe/astronauterna.gif',
+    description: `Gold mining can be a blessing and a curse.`,
+    role: 'Everything, from script, voices, artwork, animation and sound editing.',
+    year: 2024,
+  },
+];
+
+export { shorts, sweShorts };

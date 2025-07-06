@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import VideoEntry from '../components/VideoEntry.vue'
 import ReelPage from '../components/ReelPage.vue'
+import ShortsEntry from '@/components/ShortsEntry.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,8 +19,12 @@ const router = createRouter({
       component: ReelPage,
     },
     {
-      path: '/:id',
+      path: '/videos/:id',
       component: VideoEntry,
+    },
+    {
+      path: '/shorts/:id',
+      component: ShortsEntry,
     },
     {
       path: '/info',

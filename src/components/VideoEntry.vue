@@ -8,7 +8,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
 const route = useRoute();
 
 const videoId = route.params.id;
-const video = <Video>videos.find(({ id }) => id === Number(videoId));
+const video = <Video>videos.find(({ id }) => id === videoId);
 
 </script>
 
@@ -17,7 +17,7 @@ const video = <Video>videos.find(({ id }) => id === Number(videoId));
     <div class="wrapper">
         <div class="video-container">
           <iframe
-            :src="`${video.embedUrl}?end=51`"
+            :src="`${video.embedUrl}`"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -1,6 +1,6 @@
 
 type Video = {
-  id: number;
+  id: string;
   title: string,
   url: string;
   embedUrl: string;

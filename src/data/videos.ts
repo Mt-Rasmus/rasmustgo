@@ -2,7 +2,7 @@ import { type Video } from '../types/video'
 
 const videos: Video[] = [
   {
-    id: 1,
+    id: 'fancy',
     title: 'Fancy',
     url: 'https://www.youtube.com/watch?v=u4tqaNVPuSY',
     embedUrl: 'https://www.youtube.com/embed/u4tqaNVPuSY',
@@ -14,7 +14,7 @@ const videos: Video[] = [
     year: 2020,
   },
   {
-    id: 2,
+    id: 'perennial-patterns',
     title: 'Perennial Patterns',
     url: 'https://www.youtube.com/watch?v=FxZQG52SuWo',
     embedUrl: 'https://www.youtube.com/embed/FxZQG52SuWo',
@@ -25,7 +25,7 @@ const videos: Video[] = [
     year: 2025,
   },
   {
-    id: 3,
+    id: 'the-job-interview',
     title: 'The Job Interview',
     url: 'https://www.youtube.com/watch?v=RSldWKGYfEs',
     embedUrl: 'https://www.youtube.com/embed/RSldWKGYfEs',
@@ -37,7 +37,7 @@ const videos: Video[] = [
     year: 2024,
   },
   {
-    id: 4,
+    id: 'ibone-keynote',
     title: 'The iBone Keynote',
     url: 'https://www.youtube.com/watch?v=xJMvZjDDcuo',
     embedUrl: 'https://www.youtube.com/embed/xJMvZjDDcuo',
@@ -50,7 +50,7 @@ const videos: Video[] = [
     year: 2025,
   },
   {
-    id: 5,
+    id: 'get-them-gains',
     title: 'Get them Gains',
     url: 'https://www.youtube.com/watch?v=OnmXfh_fqkg',
     embedUrl: 'https://www.youtube.com/embed/OnmXfh_fqkg',
@@ -62,7 +62,7 @@ const videos: Video[] = [
     year: 2024,
   },
   {
-    id: 6,
+    id: 'gollum-vs-arnold',
     title: 'Gollum VS Arnold',
     url: 'https://www.youtube.com/watch?v=-WWquHtph5A',
     embedUrl: 'https://www.youtube.com/embed/-WWquHtph5A',
@@ -74,7 +74,7 @@ const videos: Video[] = [
     year: 2025,
   },
   {
-    id: 7,
+    id: 'the-ghost',
     title: 'The Ghost',
     url: 'https://www.youtube.com/watch?v=aRIY36bBk78',
     embedUrl: 'https://www.youtube.com/embed/aRIY36bBk78',
