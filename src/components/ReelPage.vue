@@ -7,7 +7,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
 
 <template>
   <div class="flex flex-col justify-center items-center w-full mt-7 mb-[75px]">
-    <div class="mt-5 text-3xl mb-4" style="font-family: Poppins;">Showreel</div>
+    <div class="mt-5 text-3xl mb-6" style="font-family: Poppins;">Showreel</div>
     <div class="wrapper">
       <div class="youtube-video">
         <div class="video-container">

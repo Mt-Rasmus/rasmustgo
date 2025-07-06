@@ -26,7 +26,7 @@ import { shorts, sweShorts } from '../data/shorts';
           </RouterLink>
       </div>
     </div>
-    <div class="text-3xl my-8" style="font-family: Poppins;">Vertical Shorts (in Swedish)</div>
+    <div class="text-3xl my-8 sm:text-2xl" style="font-family: Poppins;">Vertical Shorts (in Swedish)</div>
     <div class="shorts-wrapper">
       <div v-for="short in sweShorts" :key="short.id">
           <RouterLink :to="`/shorts/${short.id}`">
