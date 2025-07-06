@@ -7,13 +7,16 @@ import FooterComponent from '@/components/FooterComponent.vue';
 <template>
   <div class="about px-[10vw]">
     <div
-      class="mt-[30px] flex flex-col lg:flex-row w-full justify-center"
+      class="mt-[30px] flex flex-col md:flex-row w-full justify-center"
       style="font-family: 'Fredoka'"
     >
-      <div class="w-full lg:w-[40%] mb-6 lg:mb-0">
+      <!-- Image block -->
+      <div class="w-full md:w-[40%] mb-6 md:mb-0">
         <img src="/src/assets/9.jpeg" class="w-full h-auto" />
       </div>
-      <div class="w-full lg:w-[50%] lg:ml-6">
+
+      <!-- Text block -->
+      <div class="w-full md:w-[50%] md:ml-6">
         <div class="mb-4 flex">
           I'm
           <div class="font-bold ml-1" style="color: #409EFF;">
@@ -45,6 +48,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
   </div>
   <FooterComponent class="mt-[40px] mb-[20px]" />
 </template>
+
 
 <style>
 @media (min-width: 1024px) {
