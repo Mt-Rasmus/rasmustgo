@@ -10,7 +10,7 @@ import { shorts, sweShorts } from '../data/shorts';
 
 <template>
   <div class="flex flex-col justify-center items-center w-full">
-    <div class="mb-6 ffont-bold text-3xl mb-4" style="font-family: Poppins;">Videos</div>
+    <div class="mb-6 text-3xl mb-4" style="font-family: Poppins;">Short films</div>
     <div class="wrapper">
       <div v-for="video in videos" :key="video.id">
         <RouterLink :to="`/videos/${video.id}`">
@@ -18,7 +18,7 @@ import { shorts, sweShorts } from '../data/shorts';
         </RouterLink>
       </div>
     </div>
-    <div class="mt-6 ffont-bold text-3xl mb-6" style="font-family: Poppins;">Reels</div>
+    <div class="text-3xl my-8" style="font-family: Poppins;">Vertical Shorts</div>
     <div class="shorts-wrapper">
       <div v-for="short in shorts" :key="short.id">
           <RouterLink :to="`/shorts/${short.id}`">
@@ -26,7 +26,7 @@ import { shorts, sweShorts } from '../data/shorts';
           </RouterLink>
       </div>
     </div>
-    <div class="mt-6 ffont-bold text-3xl mb-6" style="font-family: Poppins;">Reels (in Swedish)</div>
+    <div class="text-3xl my-8" style="font-family: Poppins;">Vertical Shorts (in Swedish)</div>
     <div class="shorts-wrapper">
       <div v-for="short in sweShorts" :key="short.id">
           <RouterLink :to="`/shorts/${short.id}`">
