@@ -32,6 +32,13 @@ import FooterComponent from '@/components/FooterComponent.vue';
   margin: 0 auto;
 }
 
+@media (max-width: 640px) {
+.youtube-video {
+  width: 90vw;
+  margin: 0 auto;
+}
+}
+
 .video-container {
   position: relative;
   width: 100%;
