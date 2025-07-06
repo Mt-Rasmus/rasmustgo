@@ -68,6 +68,9 @@ import { shorts, sweShorts } from '../data/shorts';
   .shorts-wrapper {
     grid-template-columns: repeat(1, minmax(200px, 1fr));
   }
+  .wrapper {
+    max-width: 85vw;
+  }
 }
 
 

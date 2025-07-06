@@ -33,10 +33,10 @@ import FooterComponent from '@/components/FooterComponent.vue';
 }
 
 @media (max-width: 640px) {
-.youtube-video {
-  width: 90vw;
-  margin: 0 auto;
-}
+  .youtube-video {
+    width: 90vw;
+    margin: 0 auto;
+  }
 }
 
 .video-container {

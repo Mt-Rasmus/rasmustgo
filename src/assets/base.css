@@ -63,7 +63,7 @@ body {
   /* min-height: 100vh;
   color: var(--color-text); */
   /* background: var(--color-background); */
-  background: white;
+  background: white !important;
   line-height: 1.6;
   font-family:
     Inter,
