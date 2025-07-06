@@ -7,7 +7,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
 <template>
   <div class="about px-[10vw]">
     <div
-      class="mt-[20px] flex flex-col lg:flex-row w-full justify-center"
+      class="mt-[30px] flex flex-col lg:flex-row w-full justify-center"
       style="font-family: 'Fredoka'"
     >
       <div class="w-full lg:w-[40%] mb-6 lg:mb-0">
