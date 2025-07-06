@@ -30,7 +30,7 @@ const goToInstagram = () => {
       </div>
 
       <!-- Desktop Tabs -->
-      <div class="hidden md:flex items-center">
+      <div class="hidden md:flex">
         <el-tabs v-model="currentPage" class="demo-tabs custom-tabs" @tab-click="handleClick">
           <el-tab-pane label="Work" name=""></el-tab-pane>
           <el-tab-pane label="Reel" name="reel"></el-tab-pane>
