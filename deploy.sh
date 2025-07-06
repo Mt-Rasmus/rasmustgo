@@ -1,19 +1,21 @@
 #!/usr/bin/env sh
 
+# abort on errors
 set -e
 
+# build
 npm run build
 
+# go to the build output directory
 cd dist
 
+# initialize a new git repo in dist/
 git init
 git add -A
 git commit -m 'deploy'
 
-git branch -M gh-pages
+# force push to gh-pages branch
+git push -f https://github.com/Mt-Rasmus/rasmustgo.git master:gh-pages
 
-git remote add origin https://github.com/Mt-Rasmus/rasmustgo.git
-
-git push -f origin gh-pages
-
+# go back to root
 cd -
