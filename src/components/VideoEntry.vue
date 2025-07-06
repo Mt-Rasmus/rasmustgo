@@ -24,7 +24,10 @@ const video = <Video>videos.find(({ id }) => id === Number(videoId));
             allowfullscreen
           />
         </div>
-      <div class="mt-6 font-bold text-xl mb-4">{{ video.title }}</div>
+      <div class="mt-6 font-bold text-xl mb-4" style="font-family: Poppins;">{{ video.title }}</div>
+      <!-- <div class="mt-6 font-bold text-xl mb-4" style="font-family: Montserrat;">{{ video.title }}</div>
+      <div class="mt-6 font-bold text-xl mb-4" style="font-family: Josefin Sans;">{{ video.title }}</div>
+      <div class="mt-6 font-bold text-xl mb-4" style="font-family: Work Sans;">{{ video.title }}</div> -->
       <div class="mb-2">{{ video?.description }}</div>
       <div class="mb-2">Role: {{ video?.role }}</div>
       <div class="mb-5">{{ `(${video?.year})` }}</div>

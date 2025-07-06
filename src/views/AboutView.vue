@@ -8,7 +8,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
   <div class="about px-[10vw]">
     <div
       class="mt-[20px] flex flex-col lg:flex-row w-full justify-center"
-      style="font-family: 'Fredoka', sans-serif;"
+      style="font-family: 'Fredoka'"
     >
       <div class="w-full lg:w-[40%] mb-6 lg:mb-0">
         <img src="/src/assets/9.jpeg" class="w-full h-auto" />

@@ -19,7 +19,7 @@ defineProps<{
     <div
       class="absolute inset-0 bg-[rgba(0,0,0,0.25)] flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
     >
-      <p class="text-white font-bold text-2xl px-4 text-center">
+      <p class="text-white font-bold text-2xl px-4 text-center" >
         {{ video.title }}
       </p>
     </div>

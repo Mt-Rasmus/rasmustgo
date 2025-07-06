@@ -1,22 +1,8 @@
-
 import { type Video } from '../types/video'
 
 const videos: Video[] = [
   {
     id: 1,
-    title: 'The iBone Keynote',
-    url: 'https://www.youtube.com/watch?v=xJMvZjDDcuo',
-    embedUrl: 'https://www.youtube.com/embed/xJMvZjDDcuo',
-    thumbnail: 'src/assets/thumbnails/SteveDogsThumbnail9.png',
-    gifPreview: 'src/assets/gifs/iBone.gif',
-    description: `Parody of Steve Jobs\'s 2007 iPhone keynote with a canine twist. \n 
-    Inspiration came from seeing my friends\'s dog with a little turtleneck sweater. \n
-    I prompted the AI generated dogs from Kling AI.`,
-    role: 'Everything, from script, voices, artwork, animation, and sound editing',
-    year: 2025,
-  },
-  {
-    id: 2,
     title: 'Fancy',
     url: 'https://www.youtube.com/watch?v=u4tqaNVPuSY',
     embedUrl: 'https://www.youtube.com/embed/u4tqaNVPuSY',
@@ -28,7 +14,7 @@ const videos: Video[] = [
     year: 2020,
   },
   {
-    id: 3,
+    id: 2,
     title: 'Perennial Patterns',
     url: 'https://www.youtube.com/watch?v=FxZQG52SuWo',
     embedUrl: 'https://www.youtube.com/embed/FxZQG52SuWo',
@@ -39,7 +25,7 @@ const videos: Video[] = [
     year: 2025,
   },
   {
-    id: 4,
+    id: 3,
     title: 'The Job Interview',
     url: 'https://www.youtube.com/watch?v=RSldWKGYfEs',
     embedUrl: 'https://www.youtube.com/embed/RSldWKGYfEs',
@@ -49,6 +35,19 @@ const videos: Video[] = [
     Added stock footage for emotional effect (from videvo.net).`,
     role: 'Everything, from script, voices, artwork, animation and sound editing.',
     year: 2024,
+  },
+  {
+    id: 4,
+    title: 'The iBone Keynote',
+    url: 'https://www.youtube.com/watch?v=xJMvZjDDcuo',
+    embedUrl: 'https://www.youtube.com/embed/xJMvZjDDcuo',
+    thumbnail: 'src/assets/thumbnails/SteveDogsThumbnail9.png',
+    gifPreview: 'src/assets/gifs/iBone.gif',
+    description: `Parody of Steve Jobs\'s 2007 iPhone keynote with a canine twist. \n 
+    Inspiration came from seeing my friends\'s dog with a little turtleneck sweater. \n
+    I prompted the AI generated dogs from Kling AI.`,
+    role: 'Everything, from script, voices, artwork, animation, and sound editing',
+    year: 2025,
   },
   {
     id: 5,
