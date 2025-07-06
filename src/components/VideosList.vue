@@ -22,10 +22,17 @@ import videos from '../data/videos';
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-template-columns: repeat(1, minmax(200px, 1fr));
   gap: 24px;
   width: 100%;
   max-width: 72vw;
   padding: 0 16px;
 }
+
+@media (min-width: 1024px) {
+  .wrapper {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
 </style>

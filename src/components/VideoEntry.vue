@@ -15,7 +15,6 @@ const video = <Video>videos.find(({ id }) => id === Number(videoId));
 <template>
   <div class="flex justify-center w-full mt-7" style="font-family: 'Fredoka'">
     <div class="wrapper">
-      <div class="youtube-video">
         <div class="video-container">
           <iframe
             :src="`${video.embedUrl}?end=51`"
@@ -25,7 +24,6 @@ const video = <Video>videos.find(({ id }) => id === Number(videoId));
             allowfullscreen
           />
         </div>
-      </div>
       <div class="mt-6 font-bold text-xl mb-4">{{ video.title }}</div>
       <div class="mb-2">{{ video?.description }}</div>
       <div class="mb-2">Role: {{ video?.role }}</div>
@@ -37,9 +35,16 @@ const video = <Video>videos.find(({ id }) => id === Number(videoId));
 
 <style scoped>
 
-.youtube-video {
-  width: 70vw;
+.wrapper {
+  width: 85vw;
   margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    width: 70vw;
+    margin: 0 auto;
+  }
 }
 
 .video-container {
