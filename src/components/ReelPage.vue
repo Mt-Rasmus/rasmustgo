@@ -6,27 +6,28 @@ import FooterComponent from '@/components/FooterComponent.vue';
 </script>
 
 <template>
-  <div class="flex flex-col justify-center items-center w-full mt-7 mb-[75px]">
-    <div class="mt-5 text-3xl mb-6" style="font-family: Poppins;">Showreel</div>
-    <div class="wrapper">
-      <div class="youtube-video">
-        <div class="video-container">
-          <iframe
-            :src="reel.embedUrl"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          />
+  <div class="flex flex-col min-h-[88vh] px-[10vw]" style="font-family: Poppins;">
+    <div class="flex-grow flex flex-col justify-top mt-[28px] items-center w-full mb-[75px]">
+      <div class="mt-5 text-3xl mb-6">Showreel</div>
+      <div class="wrapper">
+        <div class="youtube-video">
+          <div class="video-container">
+            <iframe
+              :src="reel.embedUrl"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            />
+          </div>
         </div>
       </div>
     </div>
+    <FooterComponent class="mt-[40px] mb-[20px]" />
   </div>
-  <FooterComponent class="mt-[40px] mb-[20px]" />
 </template>
 
 <style scoped>
-
 .youtube-video {
   width: 75vw;
   margin: 0 auto;
@@ -55,5 +56,4 @@ import FooterComponent from '@/components/FooterComponent.vue';
   height: 100%;
   border: 0;
 }
-
 </style>

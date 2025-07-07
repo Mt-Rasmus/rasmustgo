@@ -1,15 +1,10 @@
 <script setup lang="ts">
-
 import FooterComponent from '@/components/FooterComponent.vue';
-
 </script>
 
 <template>
-  <div class="about px-[10vw]">
-    <div
-      class="mt-[30px] flex flex-col md:flex-row w-full justify-center"
-      style="font-family: 'Fredoka'"
-    >
+  <div class="flex flex-col min-h-[88vh] px-[10vw]" style="font-family: 'Fredoka'">
+    <main class="flex-grow mt-[30px] flex flex-col md:flex-row justify-center w-full">
       <!-- Image block -->
       <div class="w-full md:w-[40%] mb-6 md:mb-0">
         <img src="/src/assets/9.jpeg" class="w-full h-auto" />
@@ -44,16 +39,9 @@ import FooterComponent from '@/components/FooterComponent.vue';
         </div>
         <div>Cheers!</div>
       </div>
-    </div>
+    </main>
+
+    <!-- Footer -->
+    <FooterComponent class="mt-[40px] mb-[20px]" />
   </div>
-  <FooterComponent class="mt-[40px] mb-[20px]" />
 </template>
-
-
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-  }
-}
-</style>
