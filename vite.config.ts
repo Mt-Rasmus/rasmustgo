@@ -8,7 +8,8 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/rasmustgo/',
+// base: '/rasmustgo/',
+  base: '/',
   plugins: [
     vue(),
     vueJsx(),
