@@ -8,6 +8,13 @@ import 'element-plus/dist/index.css'
 import App from './App.vue'
 import router from './router'
 
+// Restore redirected route from 404.html
+const redirectPath = sessionStorage.getItem('redirectPath');
+if (redirectPath) {
+  sessionStorage.removeItem('redirectPath');
+  window.history.replaceState(null, '', redirectPath);
+}
+
 const app = createApp(App)
 
 app.use(createPinia())
