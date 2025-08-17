@@ -6,7 +6,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
   <div class="flex flex-col min-h-[88vh] px-[10vw]" style="font-family: 'Fredoka'">
     <main class="flex-grow mt-[30px] flex flex-col md:flex-row justify-center w-full">
       <!-- Image block -->
-      <div class="w-full md:w-[40%] mb-6 md:mb-0">
+      <div class="w-full md:w-[35%] mb-6 md:mb-0">
         <img src="/src/assets/9.png" class="w-full h-auto" />
       </div>
 
