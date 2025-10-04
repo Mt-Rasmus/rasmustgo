@@ -22,6 +22,12 @@ import gollumGif from '@/assets/gifs/GollumArnold.gif';
 import ghostThumb from '@/assets/thumbnails/TheGhost.png';
 import ghostGif from '@/assets/gifs/TheGhost.gif';
 
+import flatEarthThumb from '@/assets/thumbnails/FE1.png';
+import flatEarthGif from '@/assets/gifs/FlatEarthWide.gif';
+
+import interrogationThumb from '@/assets/thumbnails/Interrogation1.png';
+import interrogationGif from '@/assets/gifs/Interrogation.gif';
+
 const videos: Video[] = [
   {
     id: 'fancy',
@@ -69,6 +75,28 @@ const videos: Video[] = [
     Inspiration came from seeing my friends's dog with a little turtleneck sweater. \n
     I prompted the AI generated dogs from Kling AI.`,
     role: 'Everything, from script, voices, artwork, animation, and sound editing',
+    year: 2025,
+  },
+  {
+    id: 'flat-earth',
+    title: 'Finding Flat Earth',
+    url: 'https://www.youtube.com/watch?v=BmaKFlkFlnk',
+    embedUrl: 'https://www.youtube.com/embed/BmaKFlkFlnk',
+    thumbnail: flatEarthThumb,
+    gifPreview: flatEarthGif,
+    description: `A flat earth sceptic decides to take the journey of discovery. He might not find the results he is expecting though...`,
+    role: 'Everything, from script, voices, artwork, animation',
+    year: 2025,
+  },
+  {
+    id: 'interrogation',
+    title: 'Interrogation 101',
+    url: 'https://www.youtube.com/watch?v=YEebLlUhjn0',
+    embedUrl: 'https://www.youtube.com/embed/YEebLlUhjn0',
+    thumbnail: interrogationThumb,
+    gifPreview: interrogationGif,
+    description: `A detective is interrogating a person, demonstrating his masterful technique.`,
+    role: 'Everything, from script, voices, artwork, animation',
     year: 2025,
   },
   {

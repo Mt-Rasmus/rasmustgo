@@ -1,7 +1,7 @@
 
 const reel = {
-  embedUrl: 'https://www.youtube.com/embed/b7wWexxogYc',
-  url: 'https://youtu.be/b7wWexxogYc'
+  embedUrl: 'https://www.youtube.com/embed/CJz3-jDGm4E',
+  url: 'https://youtu.be/CJz3-jDGm4E'
 };
 
 
