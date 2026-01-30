@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import VideosList from '../components/VideosList.vue'
-import FooterComponent from '@/components/FooterComponent.vue';
+import FooterComponent from '@/components/FooterComponent.vue'
 </script>
 
 <template>

@@ -1,16 +1,14 @@
 <script setup lang="ts">
-
 type Icon = {
-  name: string,
-  icon: string,
-  hoverIcon: string,
-  action: () => void,
+  name: string
+  icon: string
+  hoverIcon: string
+  action: () => void
 }
 
 const props = defineProps<{
-  icon: Icon;
-}>();
-
+  icon: Icon
+}>()
 </script>
 
 <template>
@@ -30,9 +28,7 @@ const props = defineProps<{
 </template>
 
 <style scoped>
-
 ::v-deep(.el-tabs__nav-wrap::after) {
   display: none;
 }
-
 </style>

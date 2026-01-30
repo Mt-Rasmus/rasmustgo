@@ -54,11 +54,16 @@ const goToInstagram = () => {
       </div>
       <!-- Mobile burger -->
       <div class="flex md:hidden items-center relative">
-        <button class="text-3xl bburger-icon hover:text-[#409EFF] cursor-pointer" @click="menuOpen = !menuOpen">☰</button>
+        <button
+          class="text-3xl bburger-icon hover:text-[#409EFF] cursor-pointer"
+          @click="menuOpen = !menuOpen"
+        >
+          ☰
+        </button>
         <div
           v-if="menuOpen"
           class="absolute top-[30px] right-0 bg-white shadow-lg z-50 w-[160px] py-2"
-          style="font-family: 'Poppins', sans-serif;"
+          style="font-family: 'Poppins', sans-serif"
         >
           <div
             class="px-4 py-2 cursor-pointer hover:text-[#409EFF] hover:underline"

@@ -2,8 +2,8 @@
 import { type Video } from '../types/video'
 
 defineProps<{
-  video: Video;
-}>();
+  video: Video
+}>()
 </script>
 
 <template>

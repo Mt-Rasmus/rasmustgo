@@ -1,32 +1,32 @@
-import { type Video } from '../types/video';
+import { type Video } from '../types/video'
 
 // 👇 Import thumbnails and gifs
-import fancyThumb from '@/assets/thumbnails/Fancy.png';
-import fancyGif from '@/assets/gifs/Fancy.gif';
+import fancyThumb from '@/assets/thumbnails/Fancy.png'
+import fancyGif from '@/assets/gifs/Fancy.gif'
 
-import perennialThumb from '@/assets/thumbnails/Perennial.png';
-import perennialGif from '@/assets/gifs/PerennialPatterns.gif';
+import perennialThumb from '@/assets/thumbnails/Perennial.png'
+import perennialGif from '@/assets/gifs/PerennialPatterns.gif'
 
-import interviewThumb from '@/assets/thumbnails/TheInterview.png';
-import interviewGif from '@/assets/gifs/TheInterview.gif';
+import interviewThumb from '@/assets/thumbnails/TheInterview.png'
+import interviewGif from '@/assets/gifs/TheInterview.gif'
 
-import iboneThumb from '@/assets/thumbnails/SteveDogsThumbnail9.png';
-import iboneGif from '@/assets/gifs/iBone.gif';
+import iboneThumb from '@/assets/thumbnails/SteveDogsThumbnail9.png'
+import iboneGif from '@/assets/gifs/iBone.gif'
 
-import gainsThumb from '@/assets/thumbnails/gains.png';
-import gainsGif from '@/assets/gifs/ThemGains.gif';
+import gainsThumb from '@/assets/thumbnails/gains.png'
+import gainsGif from '@/assets/gifs/ThemGains.gif'
 
-import gollumThumb from '@/assets/thumbnails/Smeagol-Arnold.png';
-import gollumGif from '@/assets/gifs/GollumArnold.gif';
+import gollumThumb from '@/assets/thumbnails/Smeagol-Arnold.png'
+import gollumGif from '@/assets/gifs/GollumArnold.gif'
 
-import ghostThumb from '@/assets/thumbnails/TheGhost.png';
-import ghostGif from '@/assets/gifs/TheGhost.gif';
+import ghostThumb from '@/assets/thumbnails/TheGhost.png'
+import ghostGif from '@/assets/gifs/TheGhost.gif'
 
-import flatEarthThumb from '@/assets/thumbnails/FE1.png';
-import flatEarthGif from '@/assets/gifs/FlatEarthWide.gif';
+import flatEarthThumb from '@/assets/thumbnails/FE1.png'
+import flatEarthGif from '@/assets/gifs/FlatEarthWide.gif'
 
-import interrogationThumb from '@/assets/thumbnails/Interrogation1.png';
-import interrogationGif from '@/assets/gifs/Interrogation.gif';
+import interrogationThumb from '@/assets/thumbnails/Interrogation1.png'
+import interrogationGif from '@/assets/gifs/Interrogation.gif'
 
 const videos: Video[] = [
   {
@@ -135,6 +135,6 @@ const videos: Video[] = [
     role: 'Script, voices, artwork, animation and sound editing.',
     year: 2016,
   },
-];
+]
 
-export default videos;
+export default videos

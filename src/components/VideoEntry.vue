@@ -1,30 +1,28 @@
 <script setup lang="ts">
-
-import { useRoute } from 'vue-router';
-import videos from '../data/videos';
+import { useRoute } from 'vue-router'
+import videos from '../data/videos'
 import { type Video } from '../types/video'
-import FooterComponent from '@/components/FooterComponent.vue';
+import FooterComponent from '@/components/FooterComponent.vue'
 
-const route = useRoute();
+const route = useRoute()
 
-const videoId = route.params.id;
-const video = <Video>videos.find(({ id }) => id === videoId);
-
+const videoId = route.params.id
+const video = <Video>videos.find(({ id }) => id === videoId)
 </script>
 
 <template>
   <div class="flex justify-center w-full mt-7" style="font-family: 'Fredoka'">
     <div class="wrapper">
-        <div class="video-container">
-          <iframe
-            :src="`${video.embedUrl}`"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          />
-        </div>
-      <div class="mt-6 font-bold text-xl mb-4" style="font-family: Poppins;">{{ video.title }}</div>
+      <div class="video-container">
+        <iframe
+          :src="`${video.embedUrl}`"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+      </div>
+      <div class="mt-6 font-bold text-xl mb-4" style="font-family: Poppins">{{ video.title }}</div>
       <!-- <div class="mt-6 font-bold text-xl mb-4" style="font-family: Montserrat;">{{ video.title }}</div>
       <div class="mt-6 font-bold text-xl mb-4" style="font-family: Josefin Sans;">{{ video.title }}</div>
       <div class="mt-6 font-bold text-xl mb-4" style="font-family: Work Sans;">{{ video.title }}</div> -->
@@ -37,7 +35,6 @@ const video = <Video>videos.find(({ id }) => id === videoId);
 </template>
 
 <style scoped>
-
 .wrapper {
   width: 85vw;
   margin: 0 auto;
@@ -66,5 +63,4 @@ const video = <Video>videos.find(({ id }) => id === videoId);
   height: 100%;
   border: 0;
 }
-
 </style>

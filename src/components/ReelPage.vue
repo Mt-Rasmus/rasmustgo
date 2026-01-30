@@ -1,12 +1,10 @@
 <script setup lang="ts">
-
-import reel from '../data/reel';
-import FooterComponent from '@/components/FooterComponent.vue';
-
+import reel from '../data/reel'
+import FooterComponent from '@/components/FooterComponent.vue'
 </script>
 
 <template>
-  <div class="flex flex-col min-h-[88vh] px-[10vw]" style="font-family: Poppins;">
+  <div class="flex flex-col min-h-[88vh] px-[10vw]" style="font-family: Poppins">
     <div class="flex-grow flex flex-col justify-top mt-[28px] items-center w-full mb-[75px]">
       <div class="mt-5 text-3xl mb-6">Showreel</div>
       <div class="wrapper">

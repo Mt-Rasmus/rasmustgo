@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { useRoute } from 'vue-router';
-import { shorts, sweShorts } from '../data/shorts';
-import { type Video } from '../types/video';
-import FooterComponent from '@/components/FooterComponent.vue';
+import { useRoute } from 'vue-router'
+import { shorts, sweShorts } from '../data/shorts'
+import { type Video } from '../types/video'
+import FooterComponent from '@/components/FooterComponent.vue'
 
-const route = useRoute();
+const route = useRoute()
 
-const videoId = route.params.id as string;
-const video = <Video>shorts.concat(sweShorts).find(({ id }) => id === videoId);
+const videoId = route.params.id as string
+const video = <Video>shorts.concat(sweShorts).find(({ id }) => id === videoId)
 </script>
 
 <template>
