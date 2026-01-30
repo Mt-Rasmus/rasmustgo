@@ -1,30 +1,36 @@
-import { type Video } from '../types/video';
+import { type Video } from '../types/video'
 
 // 🔁 Imports for English shorts
-import cs1Thumb from '@/assets/thumbnails/shorts/CustomerSupport-thumbnail.png';
-import cs1Gif from '@/assets/gifs/shorts/CustomerSupport1.gif';
+import cs1Thumb from '@/assets/thumbnails/shorts/CustomerSupport-thumbnail.png'
+import cs1Gif from '@/assets/gifs/shorts/CustomerSupport1.gif'
 
-import cs2Thumb from '@/assets/thumbnails/shorts/CustomerSupport2-thumbnail.png';
-import cs2Gif from '@/assets/gifs/shorts/CustomerSupport2.gif';
+import cs2Thumb from '@/assets/thumbnails/shorts/CustomerSupport2-thumbnail.png'
+import cs2Gif from '@/assets/gifs/shorts/CustomerSupport2.gif'
+
+import cs3Thumb from '@/assets/thumbnails/shorts/CustomerSupport3-thumbnail-notext.png'
+import cs3Gif from '@/assets/gifs/shorts/CS3-hitfilm2.gif'
+
+import cs4Thumb from '@/assets/thumbnails/shorts/CustomerSupport4-thumbnail-notext.png'
+import cs4Gif from '@/assets/gifs/shorts/CS4-shortclip.gif'
 
 // 🔁 Imports for Swedish shorts
-import astroThumb from '@/assets/thumbnails/shorts/astronauterna.png';
-import astroGif from '@/assets/gifs/shorts/swe/astronauterna.gif';
+import astroThumb from '@/assets/thumbnails/shorts/astronauterna.png'
+import astroGif from '@/assets/gifs/shorts/swe/astronauterna.gif'
 
-import boomerThumb from '@/assets/thumbnails/shorts/boomer.png';
-import boomerGif from '@/assets/gifs/shorts/swe/boomer.gif';
+import boomerThumb from '@/assets/thumbnails/shorts/boomer.png'
+import boomerGif from '@/assets/gifs/shorts/swe/boomer.gif'
 
-import minerThumb from '@/assets/thumbnails/shorts/guldgravare.png';
-import minerGif from '@/assets/gifs/shorts/swe/goldminer.gif';
+import minerThumb from '@/assets/thumbnails/shorts/guldgravare.png'
+import minerGif from '@/assets/gifs/shorts/swe/goldminer.gif'
 
-import rapThumb from '@/assets/thumbnails/shorts/rapbattle.png';
-import rapGif from '@/assets/gifs/shorts/swe/battle.gif';
+import rapThumb from '@/assets/thumbnails/shorts/rapbattle.png'
+import rapGif from '@/assets/gifs/shorts/swe/battle.gif'
 
-import medThumb from '@/assets/thumbnails/shorts/meditation.png';
-import medGif from '@/assets/gifs/shorts/swe/meditation.gif';
+import medThumb from '@/assets/thumbnails/shorts/meditation.png'
+import medGif from '@/assets/gifs/shorts/swe/meditation.gif'
 
-import friendlyThumb from '@/assets/thumbnails/shorts/penger.png';
-import friendlyGif from '@/assets/gifs/shorts/swe/pengar.gif';
+import friendlyThumb from '@/assets/thumbnails/shorts/penger.png'
+import friendlyGif from '@/assets/gifs/shorts/swe/pengar.gif'
 
 const shorts: Video[] = [
   {
@@ -50,7 +56,29 @@ const shorts: Video[] = [
     role: 'Everything, from script, voices, artwork, animation and sound editing.',
     year: 2025,
   },
-];
+  {
+    id: 'customer-support-3',
+    title: 'Customer Support 3',
+    url: 'https://youtube.com/shorts/xicRJzjzZDc',
+    embedUrl: 'https://www.youtube.com/embed/xicRJzjzZDc',
+    thumbnail: cs3Thumb,
+    gifPreview: cs3Gif,
+    description: `Third entry in my small series of parodies of life as a Customer Support agent.`,
+    role: 'Everything, from script, voices, artwork, animation and sound editing.',
+    year: 2025,
+  },
+  {
+    id: 'customer-support-4',
+    title: 'Customer Support 4',
+    url: 'https://youtube.com/shorts/o7EUivelj9E',
+    embedUrl: 'https://www.youtube.com/embed/o7EUivelj9E',
+    thumbnail: cs4Thumb,
+    gifPreview: cs4Gif,
+    description: `Fourth entry in my small series of parodies of life as a Customer Support agent.`,
+    role: 'Everything, from script, voices, artwork, animation and sound editing.',
+    year: 2025,
+  },
+]
 
 const sweShorts: Video[] = [
   {
@@ -119,6 +147,6 @@ const sweShorts: Video[] = [
     role: 'Everything, from script, voices, artwork, animation and sound editing.',
     year: 2024,
   },
-];
+]
 
-export { shorts, sweShorts };
+export { shorts, sweShorts }
