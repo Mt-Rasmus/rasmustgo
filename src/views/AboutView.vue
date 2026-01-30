@@ -22,8 +22,8 @@ import FooterComponent from '@/components/FooterComponent.vue'
           and most of the music. I've been crafting cartoons like this for over 10 years.
         </div>
         <div class="mb-4">
-          Alongside animation, I work professionally as a software developer, though my main focus
-          and love is for animation and storytelling.
+          Alongside animation, I work professionally as a Frontend Software Engineer, bringing the
+          same creative mindset into both my technical and artistic work.
         </div>
         <div class="mb-4">
           I have a Bachelor's and a Master's degree in Media Technology and Engineering from
