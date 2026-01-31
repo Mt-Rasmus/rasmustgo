@@ -3,11 +3,21 @@ import { useRoute } from 'vue-router'
 import { shorts, sweShorts } from '../data/shorts'
 import { type Video } from '../types/video'
 import FooterComponent from '@/components/FooterComponent.vue'
+import { computed, ref } from 'vue'
 
 const route = useRoute()
 
 const videoId = route.params.id as string
 const video = <Video>shorts.concat(sweShorts).find(({ id }) => id === videoId)
+const showSwedishVersion = ref(false)
+const videoUrl = computed(() => {
+  if (showSwedishVersion.value) {
+    const sweVideo = <Video>shorts.concat(sweShorts).find(({ id }) => id === video?.sweVersionId)
+    return sweVideo?.embedUrl
+  }
+  return video?.embedUrl
+})
+const hasSwedishVersion = video?.sweVersionId
 </script>
 
 <template>
@@ -15,7 +25,7 @@ const video = <Video>shorts.concat(sweShorts).find(({ id }) => id === videoId)
     <div class="wrapper">
       <div class="video-container vertical">
         <iframe
-          :src="`${video?.embedUrl}?autoplay=1&modestbranding=1&playsinline=1`"
+          :src="`${videoUrl}?autoplay=1&modestbranding=1&playsinline=1`"
           title="YouTube Shorts"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -27,6 +37,13 @@ const video = <Video>shorts.concat(sweShorts).find(({ id }) => id === videoId)
         <p class="mb-2 whitespace-pre-line">{{ video?.description }}</p>
         <p class="mb-2"><strong>Role:</strong> {{ video?.role }}</p>
         <p>({{ video?.year }})</p>
+      </div>
+      <div
+        v-if="hasSwedishVersion"
+        @click="showSwedishVersion = !showSwedishVersion"
+        class="p-2 cursor-pointer hover:text-[#409EFF] flex justify-center"
+      >
+        {{ `Watch ${showSwedishVersion ? 'English' : 'Swedish'} version` }}
       </div>
     </div>
     <FooterComponent class="mt-10 mb-5" />

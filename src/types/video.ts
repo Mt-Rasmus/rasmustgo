@@ -8,6 +8,8 @@ type Video = {
   description?: string
   role?: string
   year?: number
+  sweVersionId?: string
+  hasEngVersion?: boolean
 }
 
 export { type Video }

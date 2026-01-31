@@ -4,6 +4,8 @@ import ShortListEntry from './ShortListEntry.vue'
 import { RouterLink } from 'vue-router'
 import videos from '../data/videos'
 import { shorts, sweShorts } from '../data/shorts'
+
+const filteredSweShorts = sweShorts.filter((short) => !short.hasEngVersion)
 </script>
 
 <template>
@@ -28,7 +30,7 @@ import { shorts, sweShorts } from '../data/shorts'
       Vertical Shorts (in Swedish)
     </div>
     <div class="shorts-wrapper">
-      <div v-for="short in sweShorts" :key="short.id">
+      <div v-for="short in filteredSweShorts" :key="short.id">
         <RouterLink :to="`/shorts/${short.id}`">
           <ShortListEntry :video="short" />
         </RouterLink>
